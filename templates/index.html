@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>EcoViajes</title><link rel="stylesheet" href="/static/estilos.css"></head>
+<body><main class="contenedor"><header><span class="marca">✈ EcoViajes</span><h1>Planea tu viaje sin gastar de más</h1><p>Descubre destinos que se adapten a tu presupuesto y preferencias.</p></header>
+<section class="panel"><h2>Cuéntanos tu plan</h2><form id="formulario">
+<label>Presupuesto total (MXN)<input name="presupuesto" type="number" min="100" max="100000" value="3000" required></label>
+<label>Duración (días)<input name="dias" type="number" min="1" max="30" value="3" required></label>
+<label>Transporte<select name="transporte"><option value="cualquiera">Cualquiera</option><option value="autobus">Autobús</option><option value="auto">Automóvil</option></select></label>
+<label>Tipo de destino<select name="tipo"><option value="cualquiera">Cualquiera</option><option value="playa">Playa</option><option value="cultura">Cultura</option><option value="naturaleza">Naturaleza</option><option value="pueblo_magico">Pueblo mágico</option></select></label>
+<button type="submit">Buscar viajes</button></form></section>
+<section id="resultados" aria-live="polite"><p>Completa el formulario para consultar el sistema experto.</p></section>
+<footer>Estimaciones orientativas. Verifica precios, rutas y disponibilidad antes de viajar.</footer></main><script src="/static/app.js"></script></body></html>
